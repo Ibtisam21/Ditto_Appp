@@ -19,13 +19,17 @@ class _AboutPageState extends State<AboutPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Note : \n 16.02.2023 Heavily Under Construction: \n started integrating Nostr.."),
-              SizedBox(height: 40),
-              Text("About"),
-              SizedBox(height: 20),
-              Text("Ditto is like the social networking apps we're used to, \n but better:"),
+              Column(
+                children: [
+                  const Text("Note : \n 16.02.2023 Heavily Under Construction: \n started integrating Nostr.."),
+                ],
+              ),
+              const SizedBox(height: 40),
+              const Text("About", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),),
+              const SizedBox(height: 20),
+              const Text("Ditto is like the social networking apps we're used to, \n but better:"),
               Container(
-                  margin: EdgeInsets.all(40.0),
+                  margin: const EdgeInsets.all(40.0),
                   child: Column(
                     children: [
                       Text("Accessible. No phone number or signup required. Just type in your name or alias and go!"),

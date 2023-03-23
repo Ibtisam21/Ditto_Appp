@@ -109,11 +109,12 @@ class _ProfileState extends State<Profile> {
           Container(
           height: 150,
           width: MediaQuery.of(context).size.width,
-          decoration: const BoxDecoration(
-            color: Colors.teal,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/back.jpeg", ), fit: BoxFit.cover, colorFilter: ColorFilter.mode(Colors.teal.withOpacity(0.8), BlendMode.dstATop),),
           ),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 28),
+            child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 38),
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -122,8 +123,8 @@ class _ProfileState extends State<Profile> {
                     PopupMenuButton(
                       icon: const Icon(
                         Icons.more_horiz,
-                        color: Colors.white70,
-                        size : 30
+                        color: Colors.black,
+                        size : 40
                       ),
                         itemBuilder: (_){
                         return <PopupMenuItem<String>>[

@@ -1,7 +1,7 @@
 import 'package:ditto/model/profile.dart';
 import 'package:ditto/screen/event.dart';
 import 'package:ditto/screen/profil.dart';
-import 'package:ditto/widget/the_wall.dart';
+// import '../../../../Desktop/Flutter_App/chatbot-chatgpt/lib/widgets/the_wall.dart';
 import 'package:ditto/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -10,6 +10,8 @@ import 'package:web_socket_channel/web_socket_channel.dart';
 import 'package:sqlite3_flutter_libs/sqlite3_flutter_libs.dart';
 import '../constants/constants.dart';
 import 'package:sqlite3/sqlite3.dart';
+
+import '../widget/the_wall.dart';
 
 final db = sqlite3.openInMemory();
 

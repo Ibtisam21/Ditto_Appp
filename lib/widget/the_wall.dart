@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'package:ditto/main.dart';
 import 'package:ditto/widget/tweet.dart';
+// import '../../../../Desktop/Flutter_App/chatbot-chatgpt/lib/widgets/tweet.dart';
 import 'package:flutter/material.dart';
 import 'package:nostr/nostr.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
